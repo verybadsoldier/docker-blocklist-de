@@ -1,0 +1,10 @@
+version: '3.2'
+services:
+  blocklist-de:
+    image: verybadsoldier/blocklist-de
+    container_name: blocklist-de
+    network_mode: "host"
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    restart: always
